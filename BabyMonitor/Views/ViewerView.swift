@@ -12,7 +12,7 @@ struct ViewerView: View {
             if let image = viewModel.currentFrame {
                 Image(uiImage: image)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fill)
                     .rotationEffect(.degrees(90))
                     .scaleEffect(x: -1, y: 1)
                     .edgesIgnoringSafeArea(.all)
